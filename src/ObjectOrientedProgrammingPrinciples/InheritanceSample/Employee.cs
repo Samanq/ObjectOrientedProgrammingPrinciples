@@ -5,6 +5,12 @@ public class Employee
     public string Name { get; set; } = string.Empty;
     public string Address { get; set; } = string.Empty ;
 
+    // With virtual keyword, child class can override this method and define it itself.
+    public virtual void StartWorking()
+    {
+
+    }
+
     public void Validate()
     {
         ValidateName();

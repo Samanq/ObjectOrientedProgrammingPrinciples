@@ -6,4 +6,9 @@ public class Manager : Employee
     {
         Console.WriteLine($"{base.Name} is managing.");
     }
+
+    public override void StartWorking()
+    {
+        Console.WriteLine($"{Name} Taking right stairs to the office.");
+    }
 }

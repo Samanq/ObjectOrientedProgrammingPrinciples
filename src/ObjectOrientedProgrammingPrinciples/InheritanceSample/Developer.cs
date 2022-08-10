@@ -6,4 +6,10 @@ public class Developer : Employee
     {
         Console.WriteLine($"{base.Name} is developing");
     }
+
+    public override void StartWorking()
+    {
+        Console.WriteLine($"{Name} Taking left stairs to the office");
+    }
+
 }

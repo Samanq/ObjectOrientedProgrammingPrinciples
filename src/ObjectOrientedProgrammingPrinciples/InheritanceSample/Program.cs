@@ -16,6 +16,8 @@ Manager manager = new Manager
     Address = "Doe"
 };
 
-
+developer.StartWorking();
 developer.Develope();
+
+manager.StartWorking();
 manager.Manage();
