@@ -1,18 +1,18 @@
-﻿namespace AbstractionSample;
+﻿namespace InheritanceSample;
 
-public class User
+public class Employee
 {
     public string Name { get; set; } = string.Empty;
-    public string Address { get; set; } = string.Empty;
+    public string Address { get; set; } = string.Empty ;
 
-    // Exposing only this method to the client.
     public void Validate()
     {
         ValidateName();
         ValidateAddress();
     }
 
-    // There is no reason that client can access this method.
+
+    // We hide these method for abstraction purpose.
     private void ValidateName()
     {
         if (Name.Length < 3)
@@ -24,11 +24,9 @@ public class User
             Console.WriteLine($"{Name} is valid");
         }
     }
-
-    // There is no reason that client can aceess this method.
     private void ValidateAddress()
     {
-        if (Address.Length < 3)
+        if (Name.Length < 3)
         {
             Console.WriteLine($"{Address} is not valid");
         }
