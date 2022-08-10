@@ -11,4 +11,9 @@ public class Manager : Employee
     {
         Console.WriteLine($"{Name} Taking right stairs to the office.");
     }
+
+    public new void Validate()
+    {
+        Console.WriteLine("Validating...");
+    }
 }

@@ -23,22 +23,22 @@ public class Employee
     {
         if (Name.Length < 3)
         {
-            Console.WriteLine($"{Name} is not valid");
+            Console.WriteLine($"{Name} is not a valid {nameof(Name)}");
         }
         else
         {
-            Console.WriteLine($"{Name} is valid");
+            Console.WriteLine($"{Name} is a valid {nameof(Name)}");
         }
     }
     private void ValidateAddress()
     {
         if (Name.Length < 3)
         {
-            Console.WriteLine($"{Address} is not valid");
+            Console.WriteLine($"{Address} is not a valid {nameof(Address)}");
         }
         else
         {
-            Console.WriteLine($"{Address} is valid");
+            Console.WriteLine($"{Address} is a valid {nameof(Address)}");
         }
     }
 }

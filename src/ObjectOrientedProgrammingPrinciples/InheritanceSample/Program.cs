@@ -21,3 +21,6 @@ developer.Develope();
 
 manager.StartWorking();
 manager.Manage();
+
+developer.Validate();
+manager.Validate();
